@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Reviews</title>
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Poppins;
+        }
+        :root {
+            --primary-color:#81a8e7;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        h1 {
+            font-weight:800;
+            font-size: 2.2rem;
+        }
+
+        .underline {
+            width:6rem;
+            border:2px solid var(--primary-color);
+        }
+
+        .review {
+            /* TODO media queries */
+            width: 40%;
+            min-width: 25em;
+            margin-top: 2rem;
+            box-shadow: 0 0 20px 1px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .box-quote {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1em;
+            gap:.5em
+        }
+
+        .quotes {
+            width:1.7em;
+
+        }
+
+
+        /* Elements are overlapped because img is absolute */
+
+        .name {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .quote {
+            text-align: center;
+            width:100%;
+            padding-inline:5%;
+            font-size: .9rem;
+            margin-top: .4em;;
+        }
+
+        .controllers {
+            display: flex;
+            justify-content: center;
+            margin-block:.2em;
+        }
+
+        .arrow {
+            width: 1.7em;
+            height:1.7em;
+            filter: brightness(0) saturate(100%) invert(68%) sepia(8%) saturate(2536%) hue-rotate(183deg) brightness(96%) contrast(88%);
+            cursor:pointer;
+        }
+
+        button {
+            border: 2px solid var(--primary-color);
+            border-radius: .3em;
+            padding:.1em .4em;
+            color:var(--primary-color);
+            text-shadow: 1px 1px 12px var(--primary-color);
+            margin-bottom:1.2em;
+            cursor:pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Greatest Quotes</h1>
+        <span class="underline"></span>
+        <section class="review">
+            
+        </section>
+    </main>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
